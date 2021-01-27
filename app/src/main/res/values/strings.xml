@@ -1,0 +1,61 @@
+<resources>
+    <string name="age">Age   </string>
+    <string name="app_name">Financial Planner</string>
+    <string name="average_roi">Average ROI (%) per annum</string>
+
+    <string name="balance_sheet">Balance Statement+</string>
+    <string name="balance_sheet_short">Balance Statement</string>
+
+    <string name="corpus_required">Corpus Required</string>
+    <string name="current_age">Current Age</string>
+    <string name="curent_expenses">Curent Expenses per month</string>
+    <string name="curent_savings">Curent Savings</string>
+
+    <string name="expense">Expense</string>
+    <string name="final_corpus">Final Corpus</string>
+
+    <string name="inflation">Inflation (%) per annum</string>
+
+    <string name="life_expectancy">Life Expectancy</string>
+
+    <string name="retirement_age">Retirement Age</string>
+
+    <string name="plan_my_retirement">Plan My Retirement</string>
+
+    <string name="sip">Investment</string>
+    <string name="sip_to_corpus">SIP To Corpus</string>
+    <string name="sip_factor">SIP increase (%) per annum</string>
+
+    <string name="total_interest_paid">Total Interest</string>
+    <string name="total_invested">Total Invested</string>
+
+
+    <string name="projected_expense">Projected Expense</string>
+
+
+    <string name="calculate">=</string>
+    <string name="corpus">Corpus</string>
+
+
+    <string name="corpus_to_sip">Corpus To SIP</string>
+    <string name="starting_sip">Starting SIP</string>
+    <string name="period">Period</string>
+
+    <string name="calculate1">CALCULATE</string>
+
+    <string name="interest_earned">Interest Earned</string>
+    <string name="loan_to_emi">Loan To EMI</string>
+    <string name="emi_to_loan">EMI To Loan</string>
+    <string name="loan_amount">Loan Amount</string>
+    <string name="interest_rate">Interest rate (%)</string>
+    <string name="loan_emi">Loan EMI</string>
+
+    <string name="total_payment">Total Payment</string>
+    <string name="buying_vs_renting">Buying vs Renting</string>
+    <string name="corpus_sip"><![CDATA[Corpus <---> SIP]]></string>
+    <string name="loan_or_emi"><![CDATA[Loan <---> EMI]]></string>
+    <string name="sip_increase_per_annum">SIP increase (%) per annum</string>
+    <string name="age1">"Age   "</string>
+    <string name="colorStrBlack">#000000</string>
+
+</resources>

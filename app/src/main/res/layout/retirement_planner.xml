@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetirementPlanner">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview_currentage"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="16dp"
+                android:text="@string/current_age"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edittext_currentage"
+                android:layout_width="@dimen/edittext_3dig"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="16dp"
+                android:inputType="number"
+                android:maxLength="2"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textview_retirementage"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/margintop"
+                android:text="@string/retirement_age"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_currentage"/>
+
+            <EditText
+                android:id="@+id/edittext_retirementage"
+                android:layout_width="53dp"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:inputType="number"
+                android:maxLength="3"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_currentage" />
+
+            <TextView
+                android:id="@+id/textview_lifeexpectancy"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/margintop"
+                android:text="@string/life_expectancy"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_retirementage" />
+
+
+            <EditText
+                android:id="@+id/edittext_lifeexpectancy"
+                android:layout_width="53dp"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:inputType="number"
+                android:maxLength="3"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_retirementage" />
+
+            <TextView
+                android:id="@+id/textview_currentexpenses"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/margintop"
+                android:text="@string/curent_expenses"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_lifeexpectancy" />
+
+            <EditText
+                android:id="@+id/edittext_currentexpenses"
+                android:layout_width="@dimen/edittext_9dig"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:inputType="number"
+                android:maxLength="9"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_lifeexpectancy" />
+
+            <TextView
+                android:id="@+id/textview_currentsavings"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/margintop"
+                android:text="@string/curent_savings"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_currentexpenses" />
+
+            <EditText
+                android:id="@+id/edittext_currentsavings"
+                android:layout_width="@dimen/edittext_9dig"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:inputType="number"
+                android:maxLength="9"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_currentexpenses" />
+
+            <TextView
+                android:id="@+id/textview_inflation"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/margintop"
+                android:text="@string/inflation"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_currentsavings" />
+
+            <EditText
+                android:id="@+id/edittext_inflation"
+                android:layout_width="@dimen/edittext_5dig"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:maxLength="5"
+                android:inputType="numberDecimal"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_currentsavings" />
+
+            <TextView
+                android:id="@+id/textview_averageroi"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/margintop"
+                android:text="@string/average_roi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_inflation" />
+
+            <EditText
+                android:id="@+id/edittext_roi"
+                android:layout_width="@dimen/edittext_5dig"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_inflation" />
+
+
+            <TextView
+                android:id="@+id/textview_sipannualincrease"
+                android:layout_width="@dimen/text_width"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/margintop"
+                android:text="@string/sip_factor"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_averageroi"/>
+
+            <EditText
+                android:id="@+id/edittext_sipfactor"
+                android:layout_width="@dimen/edittext_5dig"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="bottom|end"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                style="@style/EditTextStyleInput"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_roi" />
+
+
+            <TextView
+                android:id="@+id/textview_totalexpense"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginTop="@dimen/marginend"
+                android:text="@string/corpus_required"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_sipannualincrease" />
+
+
+            <EditText
+                android:id="@+id/edittext_totalexpense"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_height"
+                android:textSize="@dimen/font_size_16"
+                android:gravity="center_vertical|start"
+                android:layout_marginStart="@dimen/marginstart"
+                android:layout_marginEnd="@dimen/marginend"
+                android:layout_marginTop="@dimen/margintop"
+                android:enabled="false"
+                style="@style/EditTextStyleOutput"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textview_totalexpense" />
+
+            <Button
+                android:id="@+id/button_calculate"
+                android:layout_width="42dp"
+                android:layout_height="@dimen/text_height"
+                android:layout_marginStart="31dp"
+                android:layout_marginTop="@dimen/marginend"
+                android:text="@string/calculate"
+                app:layout_constraintLeft_toRightOf="@id/textview_totalexpense"
+                app:layout_constraintTop_toBottomOf="@id/textview_sipannualincrease" />
+
+            <Button
+                android:id="@+id/button_balancestatement"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/balance_sheet_short"
+                android:textSize="@dimen/font_size_12"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_totalexpense" />
+
+            <Button
+                android:id="@+id/button_balancestatementplus"
+                android:layout_width="@dimen/button_width"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="17dp"
+                android:text="@string/balance_sheet"
+                android:textSize="@dimen/font_size_12"
+                app:layout_constraintTop_toBottomOf="@id/edittext_totalexpense"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
